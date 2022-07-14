@@ -1,0 +1,743 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+:root {
+  --padding: 0px;
+  --margin: 0px;
+  --bg-color: #101414;
+}
+
+body {
+  padding: var(--padding);
+  margin: var(--margin);
+  background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: var(--padding);
+  margin: var(--margin);
+}
+
+p {
+  padding: var(--padding);
+  margin: var(--margin);
+}
+
+.header .header-logo img {
+  width: 15rem !important;
+}
+/* 
+.header video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .header video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .header video {
+    width: auto;
+    height: 100%;
+  }
+} */
+
+.header-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-search-button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7.5rem;
+  padding-right: 10rem;
+  align-items: center;
+}
+
+.header-items {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.header-items .header-links {
+  display: flex;
+  gap: 20px;
+}
+
+.header-items .header-links a {
+  font-weight: bolder;
+  font-family: "Poppins";
+  cursor: pointer !important;
+}
+
+.header-item {
+  /* background-color: #000000ad; */
+  background: rgba(255, 255, 255, 0.027);
+}
+
+.search-box {
+  position: absolute;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background: rgba(255, 255, 255, 0.027);
+  border-radius: 18px;
+}
+
+.search-box button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  color: #2c3a47;
+}
+
+.search-box input {
+  border: none;
+  outline: 0px;
+  padding: 0px 0px;
+  background-color: transparent;
+  border-radius: 18px;
+  color: #fff;
+  width: 0px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  cursor: pointer;
+}
+
+.search-box:hover .text {
+  width: 240px;
+  padding: 10px 20px;
+}
+
+.all-courses-overview-title a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Poppins";
+  cursor: pointer !important;
+}
+.all-courses-overview-title {
+  border-left: 8px solid #4353ff;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
+}
+
+.all-courses-overview {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 12rem;
+  padding-top: 2rem;
+}
+
+.title h1 {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 130px;
+  font-family: "Poppins";
+}
+
+.title h1 span {
+  color: #4353ff;
+}
+
+.content-hours p {
+  color: #fff;
+  font-weight: 400;
+  font-family: "Poppins";
+  font-size: 17px;
+}
+
+.content-description p {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+.content-btn button {
+  background: rgba(255, 255, 255, 0.027);
+  color: #fff;
+  width: 200px;
+  height: auto;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.audio-btn > img {
+  background: rgba(255, 255, 255, 0.027);
+  border-radius: 5px;
+}
+
+.content-btn button {
+  border: #4353ff solid 1px;
+}
+
+.content-btn {
+  padding-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.audio-btn {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+.social-icon a {
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+.social-icon {
+  display: flex;
+  gap: 10px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.banners-content {
+  position: sticky;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  padding-top: 150px;
+}
+
+.audio-btn img {
+  width: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+.audio-btn {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Poppins";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-left: 20px;
+}
+
+.content-btn button {
+  cursor: pointer !important;
+}
+
+.card-title h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+.card-img {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.027);
+  opacity: 0.6;
+}
+.card-description {
+  padding-top: 50px;
+}
+.card-img img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+.card-description {
+  width: 500px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+.card-button button {
+  background: rgba(255, 255, 255, 0.027);
+  color: #fff;
+  width: 200px;
+  height: auto;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  border: #4353ff solid 1px;
+  cursor: pointer !important;
+}
+
+.course-title h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+.content-2 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15rem;
+}
+
+.card-button {
+  padding-top: 20px;
+}
+.outline-courses {
+  width: 600px;
+  padding: 5px;
+}
+
+.outlines {
+  border: solid 1px #444;
+  padding: 5px;
+  border-top: none !important;
+}
+
+.content-outline-course {
+  z-index: 1 !important;
+}
+.content-card {
+  z-index: 1 !important;
+}
+.outline-courses-title:nth-child(3) {
+  border-top: none !important;
+}
+.outline-courses-title:nth-child(5) {
+  border-top: none !important;
+}
+.outline-courses-title:nth-child(4) {
+  border-top: none !important;
+}
+.outline-courses-title:nth-child(6) {
+  border-top: none !important;
+}
+.outline-courses-title:nth-child(7) {
+  border-top: none !important;
+}
+.outline-courses-title:nth-child(8) {
+  border-top: none !important;
+}
+.outline-courses-title:nth-child(9) {
+  border-top: none !important;
+}
+.outline-courses-title h1 {
+  font-size: 12px;
+  color: #fff;
+  font-weight: bolder;
+  font-family: "Poppins";
+}
+.outline-courses-video {
+  padding: 5px;
+}
+.outline-courses-title {
+  border: solid 1px #444;
+  padding: 5px;
+}
+.outline-courses-video a {
+  color: #fff;
+}
+.outline-courses-video p {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Poppins";
+  font-size: 13px;
+}
+.outline-courses-video {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icon a {
+  padding: 5px;
+  border-radius: 4px;
+  color: #4353ff;
+}
+
+.social-icon a:nth-child(1) {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  color: #fff;
+}
+
+.social-icon a:nth-child(2) {
+  background: #3b5998;
+  color: #fff;
+}
+
+.social-icon a:nth-child(3) {
+  background-color: #0072b1;
+  color: #fff;
+}
+
+.social-links {
+  background: rgba(255, 255, 255, 0.027);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.related-image img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+.related-begginer p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+.related-courses-title h1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+.related-course-description p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+.card-related-course-1 {
+  width: 250px;
+  height: 320px;
+  background-color: #1c1f22;
+  padding: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+}
+
+.card-related-course {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 10rem;
+}
+
+.related-items {
+  padding-top: 100px;
+}
+.related-title h1 {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+.related-title {
+  padding-bottom: 20px;
+  padding-left: 12rem;
+}
+.related-courses-title {
+  padding-top: 30px;
+}
+
+.cards-content-feedback {
+  width: 500px;
+  height: 250px;
+  background-color: #1c1f22;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+}
+.cards-content-support {
+  width: 500px;
+  height: 250px;
+  background-color: #1c1f22;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+}
+.card-feedback-icon {
+  color: #fff;
+  font-size: 50px;
+}
+.card-feedback-title h1 {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Poppins";
+  font-size: 20px;
+}
+.card-support-icon {
+  color: #fff;
+  font-size: 50px;
+}
+.card-support-icon h1 {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Poppins";
+  font-size: 20px;
+}
+.card-feedback-description p {
+  color: #444;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Poppins";
+}
+.checked {
+  color: orange;
+}
+.card-support-title h1 {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Poppins";
+  font-size: 20px;
+}
+.card-support-description p {
+  color: #444;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Poppins";
+}
+.card-support-line a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: "Poppins";
+}
+.card-support-line {
+  display: flex;
+  justify-content: flex-end;
+}
+.card-content-2 {
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+  padding-bottom: 130px !important;
+  text-align: center;
+}
+.stars-feedback {
+  font-size: 25px;
+}
+.card-feedback-icon {
+  padding-top: 50px;
+}
+
+.card-support-icon {
+  padding-top: 50px;
+}
+
+.card-support-icon img {
+  width: 100px;
+  object-fit: cover;
+  height: auto;
+}
+
+.card-feedback-icon img {
+  width: 100px;
+  object-fit: cover;
+  height: auto;
+}
+
+.subscribe-title h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: "Poppins";
+}
+.subscribe-description p {
+  color: #444;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Poppins";
+  width: 600px;
+}
+
+.subscribe-input input {
+  background-color: #1c1f22;
+  padding: 10px;
+  width: 450px;
+  height: 25px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+}
+.subscribe-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.subscribe-input a {
+  background-color: #1c1f22;
+  padding: 13px;
+  border-radius: 4px;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  font-weight: bold;
+  font-family: "Poppins";
+  right: 93px;
+  font-size: 13.6px;
+}
+
+.card-related-course-1 {
+  background: rgba(255, 255, 255, 0.027);
+}
+
+.cards-content-feedback {
+  background: rgba(255, 255, 255, 0.027);
+}
+
+.cards-content-support {
+  background: rgba(255, 255, 255, 0.027);
+}
+
+.subscribe-input input {
+  background: rgba(255, 255, 255, 0.027);
+}
+.subscribe-input a {
+  background: rgba(255, 255, 255, 0.027);
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .header-items {
+    display: none;
+  }
+  .header-search {
+    display: none;
+  }
+  .all-courses-overview {
+    padding-left: 10px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .banners-content {
+    display: flex;
+    text-align: center;
+  }
+  .title h1 {
+    font-size: 90px;
+  }
+  .audio-btn {
+    position: absolute;
+    top: 0;
+  }
+  .content-2 {
+    flex-direction: column;
+  }
+  .card .card-img img {
+    width: 100%;
+  }
+  .card .card-img img {
+    object-fit: contain;
+  }
+  .outline-courses {
+    width: 100% !important;
+  }
+  .course-title {
+    padding-top: 100px;
+  }
+  .card-descriptio {
+    width: 100% !important;
+  }
+  .related-title {
+    padding: 0px !important;
+  }
+  .card-related-course {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .card-related-course-1 {
+    width: 100%;
+  }
+  .related-image img {
+    width: 100%;
+  }
+  .card-content-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-related-course-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .outline-courses {
+    padding: 0px;
+  }
+  .subscribe-content {
+    display: none;
+  }
+  .card-description {
+    width: 100% !important;
+  }
+  .content-btn {
+    padding-left: 20px;
+  }
+  .card-title {
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+  .card-button {
+    padding-left: 20px;
+  }
+  .course-title {
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+  .related-title h1 {
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+  .card-img {
+    background: none;
+  }
+  .card-content-2 {
+    gap: 50px;
+  }
+  .outline-courses {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .all-courses-overview {
+    max-width: 90%;
+  }
+}
